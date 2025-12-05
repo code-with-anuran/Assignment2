@@ -1,11 +1,9 @@
-import React from 'react'
 
 const Footer = () => {
   return (
     <footer className="w-full bg-gradient-to-r from-teal-400 via-blue-500 to-violet-600 text-white py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
 
-        {/* Company Info */}
         <div>
           <p className="text-gray-100 leading-relaxed">
             We're a creative team building modern digital experiences.
@@ -13,7 +11,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
+
         <div>
           <h2 className="text-xl font-semibold mb-3 text-center">Quick Links</h2>
           <ul className="space-y-2 text-center">
@@ -29,7 +27,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
+
         <div>
           <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
           <ul className="space-y-2">
@@ -46,7 +44,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Note */}
       <div className="text-center text-sm text-gray-200 mt-10 border-t border-white/20 pt-4">
         © {new Date().getFullYear()} MyBrand. All rights reserved.
       </div>

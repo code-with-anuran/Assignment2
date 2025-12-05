@@ -7,7 +7,6 @@ import Loading from '../Components/Loading'
 
 const fetchData = async () => {
   const response = await axios.get("https://dummyjson.com/products/category/smartphones")
-  // console.log(response.data.products)
 
   return response?.data.products
 }
@@ -20,15 +19,11 @@ const mainData = fetchData()
 const Phone = () => {
   const navigate = useNavigate()
 
-  // const [phoneData, setPhoneData] = useState<phoneListInterface[]>([])
 
   const phoneList: phoneListInterface[] = use(mainData)
 
   console.log(phoneList);
 
-  // useEffect(() => {
-  //   setPhoneData(phoneList)
-  // }, [phoneList])
 
 
   return (

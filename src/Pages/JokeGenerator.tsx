@@ -34,7 +34,6 @@ const JokeGenerator: React.FC = () => {
     <>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-100 px-4">
         <div className="max-w-md w-full bg-slate-900/80 border border-slate-700 rounded-2xl shadow-2xl p-6 sm:p-8 backdrop-blur">
-          {/* Heading */}
           <h1 className="text-2xl sm:text-3xl font-semibold text-center mb-2">
             Random Joke Generator
           </h1>
@@ -42,7 +41,6 @@ const JokeGenerator: React.FC = () => {
             Click the button below to get a fresh joke anytime 😄
           </p>
 
-          {/* Joke box */}
           <div className="bg-slate-800/80 rounded-xl p-4 sm:p-5 mb-6 min-h-[100px] flex flex-col justify-center">
             {joke ? (
               <>
@@ -60,7 +58,6 @@ const JokeGenerator: React.FC = () => {
             )}
           </div>
 
-          {/* Button */}
           <button
             onClick={fetchData}
             disabled={loading}

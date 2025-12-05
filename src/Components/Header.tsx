@@ -19,11 +19,6 @@ const Header = () => {
     <>
       <header className="w-full bg-gradient-to-r from-teal-400 via-blue-500 to-violet-600 shadow-md">
         <div className="max-w-7xl mx-auto flex justify-center items-center p-4 ">
-          {/* Logo */}
-
-
-
-          {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-8 font-medium text-lg">
             {Navigate?.map((item, idx) => (
               <NavLink key={`${item.name}-${idx}`} to={item.href} className={hoverEffect}>

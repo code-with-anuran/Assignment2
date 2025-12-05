@@ -1,26 +1,7 @@
 import axios from "axios";
 import { useEffect, useState, type ChangeEvent } from "react";
+import type { weatherInterface } from "../Typescript/interface";
 
-interface weatherInterface {
-  name?: string;
-  message: string;
-  main?: {
-    feels_like?: number;
-    grnd_level?: number;
-    humidity?: number;
-    pressure?: number;
-    sea_level?: number;
-    temp?: number;
-    temp_max?: number;
-    temp_min?: number;
-  };
-  sys?: {
-    country?: string;
-    sunrise?: number;
-    id?: number;
-    sunset?: number;
-  };
-}
 
 const WeatherApp = () => {
   const [weather, setWeather] = useState<weatherInterface>();
